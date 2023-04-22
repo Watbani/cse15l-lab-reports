@@ -2,17 +2,17 @@ Hello there!
 
 Today I will be teaching you how to install VScode, connect to your account, and run some commands. 
 
-First of all, open the official (VScode website)[https://code.visualstudio.com/] and download the VScode app.
+First of all, open the official [VScode website](https://code.visualstudio.com/) and download the VScode app.
 
 After downloading the app, open it and you should be greeted by a page that looks like this.
 
 ![Image](Screen Shot 2023-04-10 at 4.05.24 PM.png)
 
-Second, we will learn how to connect to the UCSD remote servers. If you are on Windows, then you will have to download it from (here.)[https://gitforwindows.org/.]
+Second, we will learn how to connect to the UCSD remote servers. If you are on Windows, then you will have to download it from [here.](https://gitforwindows.org/.)
 
 After downloading Git, you are able to use git bash on VScode. Open a new terminal on VScode by going to terminal, then new terminal. Then use the following command to use ssh.
 
-`ssh cs15lsp23zz@ieng6.ucsd.edu`, but change the "zz" to your own unique account name, which you can look up (here.)[https://sdacs.ucsd.edu/~icc/index.php].
+`ssh cs15lsp23zz@ieng6.ucsd.edu`, but change the "zz" to your own unique account name, which you can look up [here.](https://sdacs.ucsd.edu/~icc/index.php)
 
 You will get a message after typing that command that reads,
 

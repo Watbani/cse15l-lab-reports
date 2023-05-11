@@ -6,7 +6,6 @@ Today I will be showing you my implementation of StringServer and how I did it.
 Provided below is my code:
 
 
-
 ```
 class Handler implements URLHandler {
     

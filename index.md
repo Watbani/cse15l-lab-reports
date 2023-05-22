@@ -77,7 +77,7 @@ Output:
 
 In the above example, grep is searching for 'error' in all files under ./technical but excluding .txt files.
 
-`grep --exclude="*.log" 'warning' ./technical/*`
+## `grep --exclude="*.log" 'warning' ./technical/*`
 
 Output:
 ./technical/system.txt:WARNING: System overload

@@ -12,9 +12,9 @@ I used the built-in man command to find this information `man grep`.
 
 Now let's use these options with examples on files and directories from ./technical.
 
-    -i
+#    -i
 
-`grep -i 'error' ./technical/log.txt`
+## `grep -i 'error' ./technical/log.txt`
 
 Output:
 ERROR: Issue in module A
@@ -23,7 +23,7 @@ error: Issue in module C
 
 In the example, grep is searching for the string 'error' in a case-insensitive manner.
 
-`grep -i 'warning' ./technical/system.txt`
+## `grep -i 'warning' ./technical/system.txt`
 
 Output:
 WARNING: System overload
@@ -31,9 +31,9 @@ Warning: Temperature high
 
 Here, we're looking for 'warning' without caring about the case in system.txt.
 
-    -v (invert match)
+#    -v (invert match)
 
-`grep -v 'success' ./technical/log.txt`
+## `grep -v 'success' ./technical/log.txt`
 
 Output:
 ERROR: Issue in module A
@@ -41,7 +41,7 @@ WARNING: Issue in module B
 
 Here, grep is returning lines that do not contain 'success'.
 
-`grep -v 'INFO' ./technical/system.txt`
+## `grep -v 'INFO' ./technical/system.txt`
 
 Output:
 WARNING: System overload
@@ -49,9 +49,9 @@ ERROR: Temperature high
 
 We're filtering out any lines with 'INFO' in system.txt.
 
-    -r or -R (recursive search)
+#    -r or -R (recursive search)
 
-`grep -r 'error' ./technical`
+## `grep -r 'error' ./technical`
 
 Output:
 ./technical/log.txt:ERROR: Issue in module A
@@ -59,7 +59,7 @@ Output:
 
 Here, grep is searching for 'error' in the ./technical directory.
 
-`grep -R 'warning' ./technical`
+## `grep -R 'warning' ./technical`
 
 Output:
 ./technical/system.txt:WARNING: System overload
@@ -67,9 +67,9 @@ Output:
 
 We're searching for 'warning' in ./technical.
 
-    --exclude (exclude files)
+#    --exclude (exclude files)
     
-`grep --exclude="*.txt" 'error' ./technical/*`
+## `grep --exclude="*.txt" 'error' ./technical/*`
 
 Output:
 ./technical/log.log:ERROR: Issue in module A

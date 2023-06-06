@@ -39,15 +39,15 @@ I added the echo statement as you suggested and ran the script again. Here's wha
 
 I ran into the same error.
 
-Setup Information
+# Setup Information
 
-The file & directory structure needed:
+## The file & directory structure needed:
 
     /project
         runBugProgram.sh
         BugProgram.java
 
-The contents of each file before fixing the bug:
+## The contents of each file before fixing the bug:
 
 runBugProgram.sh
 
@@ -67,19 +67,19 @@ BugProgram.java
   }
 }`
 
-The full command line  you ran to trigger the bug:
+## The full command line to trigger the bug:
 
 
 `bash runBugProgram.sh`
 
 A description of what to edit to fix the bug:
 
-It looks like you are not providing the filename as an argument. You should run your Bash script with the filename as a parameter, like this:
+The filename is not being provided as an argument. The Bash script should be ran with the filename as a parameter, like this:
 
 `bash runBugProgram.sh test.txt`
 
-Ensure you replace test.txt with your actual file name.
+Test.txt must be replaced with the actual file name.
 
-Part 2 – Reflection
+# Part 2 – Reflection
 
 One of the coolest things I learned the second half of this quarter is actually something unrelated to debugging, I really enjoyed meeting my lab mates and group's TA. Learning about their different cultures and backgrounds really stuck with me.

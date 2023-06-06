@@ -1,20 +1,21 @@
 # Part 1 – Debugging Scenario
 
-Student's Post
+## Student
 
-Hello everyone!
+Hello!
 
-I'm working on a project which involves running a Java script from a Bash shell script. Everything seems okay with my Java file but I'm getting a Null Pointer Exception that I can't figure out.
+I'm running a Java script from a Bash shell script. Everything seems okay with it but I'm getting an error that I can't figure out.
 
 I think the problem might be in my Bash script, but I'm not sure. The exception occurs when the bash script is supposed to pass a filename to the BugProgram.
 
-Here's a screenshot of the error message I'm getting when I run my Bash script:
+Here's a screenshot of the error:
 
-![Screenshot of Terminal with Null Pointer Exception]
+![Image](bug lab rep 5.png)
 
-Any help would be appreciated!
+Thanks,
+Ziad
 
-TA Response
+## TA
 
 Hi,
 
@@ -22,22 +23,21 @@ Can you please print out the value of the filename variable that you're passing 
 
 Please add an echo statement before calling Java command in your bash script like this:
 
-bash
 
-echo $filename
-java BugProgram $filename
+`echo $filename
+java BugProgram $filename`
 
 Then please share the terminal output.
 
-Student's Response
+## Student
 
 Hello,
 
 I added the echo statement as you suggested and ran the script again. Here's what I got:
 
-![Screenshot of Terminal with Output: Null]
+![Image](bug lab rep 5.png)
 
-It seems that the filename variable is null when it is being passed to the BugProgram.
+I ran into the same error.
 
 Setup Information
 
@@ -51,40 +51,35 @@ The contents of each file before fixing the bug:
 
 runBugProgram.sh
 
-bash
 
-#!/bin/bash
+`#!/bin/bash
 filename=$1
-java BugProgram $filename
+java BugProgram $filename`
 
 BugProgram.java
 
-java
 
-public class BugProgram {
+`public class BugProgram {
   public static void main(String[] args) {
     String fileName = args[0];
     System.out.println("Reading file: " + fileName);
     // Code to read file and process data
   }
-}
+}`
 
-The full command line (or lines) you ran to trigger the bug:
+The full command line  you ran to trigger the bug:
 
-bash
 
-bash runBugProgram.sh
+`bash runBugProgram.sh`
 
 A description of what to edit to fix the bug:
 
-It looks like you are not providing the filename as an argument when running your Bash script. You should run your Bash script with the filename as a parameter, like this:
+It looks like you are not providing the filename as an argument. You should run your Bash script with the filename as a parameter, like this:
 
-bash
+`bash runBugProgram.sh test.txt`
 
-bash runBugProgram.sh input.txt
-
-Ensure you replace input.txt with your actual file name.
+Ensure you replace test.txt with your actual file name.
 
 Part 2 – Reflection
 
-One of the most important lessons I learned during the second half of the quarter is how to effectively use debuggers and logging to understand the behavior of my code. I've found that taking the time to trace code execution and understand how data is flowing through my program helps me catch bugs earlier and better understand the systems I'm building. It might take some time to set up, but the insights gained from stepping through code and viewing variable values at runtime are invaluable.
+One of the coolest things I learned the second half of this quarter is actually something unrelated to debugging, I really enjoyed meeting my lab mates and group's TA. Learning about their different cultures and backgrounds really stuck with me.
